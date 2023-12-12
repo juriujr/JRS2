@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <a1>
+        create table USER_REGIST(
+            REGISTTIME DATE,
+            USERREGISTINFP CLOB
+        )
+    </a1>
+
+
+
+
+</resources>
