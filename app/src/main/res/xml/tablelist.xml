@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <a1>
+<TableList>
+    <tables1>
         create table USER_REGIST(
             REGISTTIME DATE,
             USERREGISTINFP CLOB
+        REGISTUSERNAME varchar2(20),
+        REGISTUSERPASS varchar2(20)
         )
-    </a1>
+    </tables1>
 
 
 
 
-</resources>
+</TableList>
