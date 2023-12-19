@@ -1,5 +1,6 @@
 package com.jrs.myapplication.ui;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.animation.Animator;
@@ -52,8 +53,8 @@ public class LoginActivity extends AppCompatActivity {
                 userBean.setREGISTTIME("2023-12-08 21:00:00");
                 userBean.setUSERREGISTINFO("aa");
                 userBean.save(new SaveListener<String>() {
-                    @Override
-                    public void done(String s, BmobException e) {
+                        @Override
+                        public void done(String s, BmobException e) {
                         if(e == null){
                             Log.i("app",s);
                         }else{
@@ -66,10 +67,18 @@ public class LoginActivity extends AppCompatActivity {
         bt_regist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(intent);
+                showRegistDialog();
+//                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+//                startActivity(intent);
             }
         });
+    }
+
+    private void showRegistDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+        builder.setView(R.layout.dialog_login);
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 
     private void initUI() {
