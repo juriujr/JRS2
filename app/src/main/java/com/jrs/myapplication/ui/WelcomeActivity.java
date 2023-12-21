@@ -50,8 +50,8 @@ public class WelcomeActivity extends AppCompatActivity {
     }
 
     private void getLocation() {
-        LocaleManager localeManager = (LocaleManager) getSystemService(Context.LOCATION_SERVICE);
-        Locale lastKnowLocaltion = localeManager.
+//        LocaleManager localeManager = (LocaleManager) getSystemService(Context.LOCATION_SERVICE);
+//        Locale lastKnowLocaltion = localeManager.
     }
 
     private void getAddressFromLocation(Location location) {
