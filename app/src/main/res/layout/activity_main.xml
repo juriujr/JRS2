@@ -89,7 +89,15 @@
             android:layout_weight="1"
             android:layout_margin="5dp"
             android:background="@drawable/radius_8dp_edittext">
-
+            <view.SwitchButtonView
+                android:id="@+id/onOffView"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                app:offColor="#FFFFFF"
+                app:onColor="#4CAF50"
+                app:paddingSize="5dp"
+                app:iconSize="60dp"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
