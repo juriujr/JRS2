@@ -1,0 +1,24 @@
+<?xml version ="1.0" encoding ="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+<gradient
+    android:angle="135"
+    android:startColor="@color/yellow"
+    android:centerColor="@color/nawabai"
+    android:endColor="@color/white"
+    android:type="linear"/>
+    <!--    1、android:angle 渐变方向角度
+            2、android:startColor 开始颜色
+            3、android:centerColor 中间颜色
+            4、android:endColor 结束颜色
+            5、android:type 渐变类型，线性linear -->
+    <!-- android:angle=0，从左到右，颜色按照开始颜色（startColor）到结束颜色（endColor）
+    ，（angle=360的效果与angle=0是一样的）；
+    2、android:angle=45，从左下角到右上角，颜色按照开始颜色（startColor）到结束颜色（endColor）；
+    3、android:angle=90，从下到上，颜色按照开始颜色（startColor）到结束颜色（endColor）；
+    4、android:angle=135，从右下角到左上角，颜色按照开始颜色（startColor）到结束颜色（endColor）；
+    5、android:angle=180，从右到左，颜色按照开始颜色（startColor）到结束颜色（endColor）；
+    6、android:angle=225，从右上角到左下角，颜色按照开始颜色（startColor）到结束颜色（endColor）；
+    7、android:angle=270，从上到下，颜色按照开始颜色（startColor）到结束颜色（endColor）；
+    8、android:angle=315，从左上角到右下角，颜色按照开始颜色（startColor）到结束颜色（endColor）；-->
+</shape>
