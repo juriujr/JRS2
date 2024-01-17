@@ -92,8 +92,9 @@
             <view.SwitchButtonView
                 android:id="@+id/onOffView"
                 android:layout_width="100dp"
-                android:layout_height="60dp"
+                android:layout_height="match_parent"
                 android:layout_centerInParent="true"
+                android:layout_margin="5dp"
                 app:offColor="#FFFFFF"
                 app:onColor="#4CAF50"
                 app:paddingSize="5dp"

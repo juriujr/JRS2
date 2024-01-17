@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="yellow">#FFFF00</color>
     <color name="nawabai">#FFFACD</color>
+    <color name="gray_line">#2F4F4F</color>
+    <color name="gray_line2">#545454</color>
+    <color name="gray_line3">#e6e6e6</color>
 </resources>

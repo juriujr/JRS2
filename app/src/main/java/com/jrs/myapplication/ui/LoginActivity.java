@@ -67,7 +67,7 @@ public class LoginActivity extends AppCompatActivity {
         bt_regist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showRegistDialog();
+//                showRegistDialog();
                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(intent);
             }

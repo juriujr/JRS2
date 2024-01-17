@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+
+        android:orientation="horizontal"
+        android:background="@color/gray_line3">
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:text="明细"
+            android:drawableTop="@mipmap/rg1"
+            android:textColor="@color/gray_line2"
+            android:textSize="14sp"/>
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:text="统计"
+            android:drawableTop="@mipmap/rg2"
+            android:textColor="@color/gray_line2"
+            android:textSize="14sp"/>
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:layout_height="95dp"
+            android:button="@null"
+            android:text="添加"
+            android:drawableTop="@mipmap/rg_add2"
+            android:textColor="@color/gray_line2"
+            android:textSize="14sp"/>
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:text="进度"
+            android:drawableTop="@mipmap/rg3"
+            android:textColor="@color/gray_line2"
+            android:textSize="14sp"/>
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:text="中心"
+            android:drawableTop="@mipmap/rg4"
+            android:textColor="@color/gray_line2"
+            android:textSize="14sp"/>
+    </RadioGroup>
+
+</LinearLayout>
