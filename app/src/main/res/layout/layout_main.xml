@@ -5,19 +5,21 @@
     android:clipChildren="false"
     android:orientation="vertical">
 
-    <View
+    <FrameLayout
+        android:id="@+id/main_fragment_container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"/>
 
 
     <RadioGroup
+        android:id="@+id/main_radiogroup"
         android:layout_width="match_parent"
         android:layout_height="65dp"
-
         android:orientation="horizontal"
         android:background="@color/gray_line3">
         <RadioButton
+            android:id="@+id/main_radiobutton_rb1"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:gravity="center"
@@ -25,10 +27,11 @@
             android:layout_height="wrap_content"
             android:button="@null"
             android:text="明细"
-            android:drawableTop="@mipmap/rg1"
+            android:drawableTop="@drawable/rg1_bg"
             android:textColor="@color/gray_line2"
             android:textSize="14sp"/>
         <RadioButton
+            android:id="@+id/main_radiobutton_rb2"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:gravity="center"
@@ -36,10 +39,11 @@
             android:layout_height="wrap_content"
             android:button="@null"
             android:text="统计"
-            android:drawableTop="@mipmap/rg2"
+            android:drawableTop="@drawable/rg2_bg"
             android:textColor="@color/gray_line2"
             android:textSize="14sp"/>
         <RadioButton
+            android:id="@+id/main_radiobutton_rbadd"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:gravity="center"
@@ -51,6 +55,7 @@
             android:textColor="@color/gray_line2"
             android:textSize="14sp"/>
         <RadioButton
+            android:id="@+id/main_radiobutton_rb3"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:gravity="center"
@@ -58,10 +63,11 @@
             android:layout_height="wrap_content"
             android:button="@null"
             android:text="进度"
-            android:drawableTop="@mipmap/rg3"
+            android:drawableTop="@drawable/rg3_bg"
             android:textColor="@color/gray_line2"
             android:textSize="14sp"/>
         <RadioButton
+            android:id="@+id/main_radiobutton_rb4"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:gravity="center"
@@ -69,7 +75,7 @@
             android:layout_height="wrap_content"
             android:button="@null"
             android:text="中心"
-            android:drawableTop="@mipmap/rg4"
+            android:drawableTop="@drawable/rg4_bg"
             android:textColor="@color/gray_line2"
             android:textSize="14sp"/>
     </RadioGroup>
