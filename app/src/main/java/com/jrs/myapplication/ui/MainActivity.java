@@ -9,8 +9,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+
 import com.jrs.myapplication.R;
 
+import application.MyApplication;
 import fragment.FragmentMain_detail;
 
 public class MainActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener {
@@ -24,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     private RadioButton mainRadiobuttonRb4;
     private FragmentMain_detail fragmentMainDetail,fragmentMainDetail2;
     private FragmentManager fragmentManager;
+    private MyApplication myApplication;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,19 +37,21 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     }
 
     private void initView() {
+        myApplication = new MyApplication();
         mainFragmentContainer = findViewById(R.id.main_fragment_container);
         mainRadiogroup = findViewById(R.id.main_radiogroup);
         for (int i = 0;i < mainRadiogroup.getChildCount();i++){
             mainRadiogroup.getChildAt(i).setId(i);
         }
-        mainRadiobuttonRb1 = findViewById(R.id.main_radiobutton_rb1);
-        mainRadiobuttonRb2 = findViewById(R.id.main_radiobutton_rb2);
-        mainRadiobuttonRbadd = findViewById(R.id.main_radiobutton_rbadd);
-        mainRadiobuttonRb3 = findViewById(R.id.main_radiobutton_rb3);
-        mainRadiobuttonRb4 = findViewById(R.id.main_radiobutton_rb4);
+//        mainRadiobuttonRb1 = findViewById(R.id.main_radiobutton_rb1);
+//        mainRadiobuttonRb2 = findViewById(R.id.main_radiobutton_rb2);
+//        mainRadiobuttonRbadd = findViewById(R.id.main_radiobutton_rbadd);
+//        mainRadiobuttonRb3 = findViewById(R.id.main_radiobutton_rb3);
+//        mainRadiobuttonRb4 = findViewById(R.id.main_radiobutton_rb4);
 
         mainRadiogroup.setOnCheckedChangeListener(this);
-        mainRadiobuttonRb1.setChecked(true);
+        mainRadiogroup.check(0);
+//        mainRadiobuttonRb1.setChecked(true);
     }
 
     @Override
