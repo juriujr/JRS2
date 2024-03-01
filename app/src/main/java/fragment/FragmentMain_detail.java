@@ -2,16 +2,24 @@ package fragment;
 
 import static com.jrs.myapplication.R.*;
 
+import android.app.Dialog;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.jrs.myapplication.R;
 
 import Tools.TimeUtils;
@@ -28,6 +36,7 @@ public class FragmentMain_detail extends BaseFragment {
     private TextView frg1TextNumuser;
     private TextView frg1TextConsume;
     private TextView frg1TextTime;
+    private Dialog bottomDialog;
 
 
     @Nullable
@@ -46,8 +55,27 @@ public class FragmentMain_detail extends BaseFragment {
     }
 
     private void setListener() {
+        frg1TextNumuser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showBottomWindow();
+            }
+        });
+    }
+
+    private void showBottomWindow() {
+        bottomDialog = new Dialog(getActivity(), R.style.photo_dialog);
+        bottomDialog.setContentView(View.inflate(getActivity(), layout.dialog_bottom_numuser,null));
+        Window window = bottomDialog.getWindow();
+        WindowManager.LayoutParams wl = window.getAttributes();
+        wl.gravity = Gravity.BOTTOM;
+        wl.y = 20;
+        window.setContentView(layout.dialog_bottom_numuser);
+        bottomDialog.show();
 
     }
+
+    
 
     private void initUI(View view) {
         frg1TextYear = view.findViewById(R.id.frg1_text_year);
